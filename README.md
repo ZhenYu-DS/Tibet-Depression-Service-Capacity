@@ -1,5 +1,7 @@
 # Stochastic Modeling of Service Capacity for Depressive Disorders in Tibet
 
+> ⚠️ **Note on Visualizations:** This notebook utilizes **Plotly** for interactive charts. Since GitHub does not render interactive scripts, **static screenshots** of the key results are embedded below for immediate viewing.
+
 ## 🏥 Project Background & Motivation
 **From Clinical Observation to Quantitative Modeling**
 
@@ -18,7 +20,18 @@ As a prospective student transitioning from medicine to data science, this proje
     * I utilized AI coding assistants to help translate my logical flow charts into executable `Python` code (`NumPy`, `Pandas`).
     * **While this workflow bridged my immediate gap in syntax, it also exposed my limitations in engineering robust code, reinforcing my determination to pursue systematic, in-depth learning in this field.**
 
-## 🔍 Key Findings
+## 🔍 Key Findings & Visualizations
+
+### 1. The Patient Attrition Funnel
+This chart quantifies the bottleneck. Notice the **sharp decline** at the "Diagnosed" stage, visualizing the severe unmet demand due to the 15-slot capacity limit.
+
+![Patient Funnel Chart](funnel_chart.png)
+
+### 2. Strategic Heatmap (Supply vs. Demand)
+The **"Stable Zone"** is only achievable when supply strategy shifts from "Hub Expansion" to "Diversion" (utilizing Node B), preventing the **"System Crash"** seen in the top-left quadrant where high barriers meet low capacity.
+
+![Strategic Heatmap](heatmap_chart.png)
+
 * **The "Awareness Paradox":** Increasing public awareness without expanding the central hub's capacity leads to a system crash (>70% blockage), not better care.
 * **Solution:** A diversion strategy utilizing general hospitals is statistically more effective than expanding the specialist center alone.
 
@@ -32,4 +45,4 @@ All parameters are grounded in real-world evidence collected during my research:
 The current model represents a **static snapshot** of annual capacity. It does not yet incorporate **backlog feedback loops** (where rejected patients re-enter the queue the next day).
 
 ---
-*Created by: [Your Name]*
+*Created by: [Zhen Yu]*
